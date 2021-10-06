@@ -1,0 +1,166 @@
+.review {
+  position: relative;
+  height: 596px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+
+  @media (max-width: $tablet-width-only) {
+    background-size: cover;
+    height: 415px;
+    width: 100vw;
+  }
+}
+
+.review--greece {
+  background-image: url("/img/index/Greece-review-desktop.jpg");
+
+  @media (max-width: $tablet-width-only) {
+    background-image: url("/img/index/Greece-review-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("/img/index/Greece-review-mobile.jpg");
+  }
+}
+
+.review--croatia {
+  background-image: url("/img/index/Croatia-review-desktop.jpg");
+
+  @media (max-width: $tablet-width-only) {
+    background-image: url("/img/index/Croatia-review-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("/img/index/Croatia-review-mobile.jpg");
+  }
+}
+
+.review--montenegro {
+  background-image: url("/img/index/Montenegro-review-desktop.jpg");
+
+  @media (max-width: $tablet-width-only) {
+    background-image: url("/img/index/Montenegro-review-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("/img/index/Montenegro-review-mobile.jpg");
+  }
+}
+
+.review--albania {
+  background-image: url("/img/index/Albania-review-desktop.jpg");
+
+  @media (max-width: $tablet-width-only) {
+    background-image: url("/img/index/Albania-review-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("/img/index/Albania-review-mobile.jpg");
+  }
+}
+
+.review--macedonia {
+  background-image: url("/img/index/Macedonia-review-desktop.jpg");
+
+  @media (max-width: $tablet-width-only) {
+    background-image: url("/img/index/Macedonia-review-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("/img/index/Macedonia-review-mobile.jpg");
+  }
+}
+
+.review__wrapper {
+  position: absolute;
+  top: 40%;
+  left: 85%;
+  transform: translate(-85%, -40%);
+  padding: 30px;
+  box-sizing: border-box;
+  width: 382px;
+  height: max-content;
+  background-color: $basic-white;
+
+  @media (max-width: $tablet-width-only) {
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -22%);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 30px 20px;
+    width: 268px;
+    top: 30%;
+  }
+}
+
+.review__title {
+  max-width: 108px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+  padding-bottom: 10px;
+  margin-bottom: 21px;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 auto;
+    max-width: min-content;
+  }
+}
+
+.review__title::after {
+  height: 1px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.review__blockquote {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: $basic-extra-dark-thin;
+  letter-spacing: -0.408333px;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+}
+
+.review__author {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.466667px;
+  color: $basic-extra-dark;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    margin: 4px 0;
+  }
+}
+
+.review__avatar {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 10px;
+  }
+}

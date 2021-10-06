@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" crossorigin type="font/woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" crossorigin type="font/woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="img/favicons/manifest.webmanifest">
+  </head>
+  <body class="page__body">
+    <div class="page__container">
+    <header class="page-header page-header--index">
+      <a class="page-header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-header.svg#desktop">
+          <source media="(min-width: 768px)" srcset="img/logo-header.svg#tablet">
+          <img class="page-header__logo" src="img/logo-header.svg#mobile" alt="Логотип сайта Мишка">
+        </picture>
+      </a>
+      <nav class="page-header__nav main-nav--closed main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button" hidden>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__catalog site-list__item">
+              <a class="main-nav__catalog-link site-link" href="catalog.html">
+                Каталог товаров
+              </a>
+              <ul class="main-nav__list-inside site-list site-catalog">
+                <li class="main-nav__new site-catalog__item">
+                  <a class="site-link" href="#">
+                    Новые поступления
+                  </a>
+                </li>
+                <li class="main-nav__sale site-catalog__item">
+                  <a class="site-link" href="#">
+                    Распродажа
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__order site-list__item">
+              <a class="site-link" href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <a class="main-nav__link main-nav__link-search link-search site-link" href="#">
+            <span>Поиск по сайту</span>
+          </a>
+          <div class="main-nav__link main-nav__link-basket user-list">
+            <a class="user-list__link link-basket site-link" href="#">
+              Корзина: пока пуста
+            </a>
+          </div>
+        </div>
+      </nav>
+      <p class="page-header__subtitle">Бесплатная доставка по России</p>
+    </header>
+  </div>
+    <main class="page-main">
+      <div class="modal">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__subtitle">Выберите размер:</p>
+          <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="modal__form-size" role="group" aria-labelledby="legend-size">
+              <div class="modal__legend" id="legend-size">
+                <span class="visually-hidden">Размер</span>
+              </div>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <input class="modal__radio visually-hidden" type="radio" name="order-size" id="small" value="small" checked>
+                  <label class="modal__label" for="small">S</label>
+                </li>
+                <li class="modal__item">
+                  <input class="modal__radio visually-hidden" type="radio" name="order-size" id="middle" value="middle">
+                  <label class="modal__label" for="middle">M</label>
+                </li>
+                <li class="modal__item">
+                  <input class="modal__radio visually-hidden" type="radio" name="order-size" id="large" value="large">
+                  <label class="modal__label" for="large">L</label>
+                </li>
+              </ul>
+              <!-- Скрытое поле для хранения информации о товаре (через js планируется прокидывать данные о товаре (артикул к примеру), исходя из того, на какую корзинку-ссылку нажатие было сделано) -->
+              <input type="hidden" name="good_id" value="">
+            </div>
+            <button class="modal__button" type="submit">
+              Добавить
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="info page__container">
+        <a class="info__link" href="index.html">
+          <span class="visually-hidden">Логотип сайта Мишка</span>
+          <svg class="info__logo" width="102" height="34">
+            <use xlink:href="img/logo-header.svg#logotype"></use>
+          </svg>
+        </a>
+        <ul class="info__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--insta" href="#">
+              <span class="visually-hidden">Мы в Instagram</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="#">
+              <span class="visually-hidden">Мы в Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--tw" href="#">
+              <span class="visually-hidden">Мы в Twitter</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="page-footer__text">Разработано</span>
+            <span class="visually-hidden">Логотип сайта HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

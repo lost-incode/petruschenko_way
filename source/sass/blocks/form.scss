@@ -1,0 +1,73 @@
+.form__question-wrapper {
+  display: flex;
+  row-gap: 20px;
+  column-gap: 19px;
+  margin-bottom: 25px;
+  justify-content: center;
+
+  @media (max-width: $tablet-width-only) {
+    flex-wrap: wrap;
+  }
+}
+
+.form__wrapper {
+  position: relative;
+}
+
+.form__input {
+  min-height: 50px;
+  min-width: 267px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid $basic-extra-light;
+}
+
+.form__input:invalid {
+  border: 1px solid $basic-red;
+}
+
+.form__input:invalid + .form__validate-text {
+  display: block;
+}
+
+.form__input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $basic-dark;
+}
+
+.form__button {
+  border: none;
+  width: 176px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 17px 40px;
+  color: $basic-white;
+  background-color: $basic-red;
+
+  &:hover {
+    background-color: $basic-red-hover;
+  }
+}
+
+.form__validate-text {
+  display: none;
+  position: absolute;
+  top: -30%;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: $basic-red;
+}

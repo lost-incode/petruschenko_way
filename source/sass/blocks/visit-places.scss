@@ -1,0 +1,152 @@
+.visit-places {
+  width: $desktop-width;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100vw;
+  }
+}
+
+.visit-places__title {
+  position: relative;
+  max-width: 360px;
+  line-height: 80px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  letter-spacing: -1.245px;
+  font-weight: 600;
+  font-size: 55px;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+  }
+}
+
+.visit-places__description {
+  max-width: 328px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.466667px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: $basic-extra-dark-thin;
+  margin-bottom: 55px;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
+  }
+}
+
+.visit-places__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 60px;
+  row-gap: 100px;
+
+  @media (max-width: $tablet-width-only) {
+    column-gap: 5vw;
+    row-gap: 40px;
+  }
+}
+
+.visit-places__item {
+  position: relative;
+  width: 350px;
+  height: 430px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.visit-places__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
+  text-decoration: none;
+  color: $basic-extra-dark;
+}
+
+.visit-places__link span {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $basic-white;
+  display: block;
+  padding-top: 16px;
+  width: 215px;
+  height: 63px;
+  box-sizing: border-box;
+}
+
+.visit-places__link-hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 266px;
+  height: 77px;
+  box-sizing: border-box;
+  padding: 30px 23px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  z-index: 1;
+}
+
+.visit-places__background-hover {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $hover-background-image;
+}
+
+.visit-places__item:hover .visit-places__link-hover {
+  display: block;
+}
+
+.visit-places__item:hover .visit-places__background-hover {
+  display: block;
+}

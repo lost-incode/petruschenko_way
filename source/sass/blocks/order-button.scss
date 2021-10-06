@@ -1,0 +1,33 @@
+.order-button {
+  display: block;
+  box-sizing: border-box;
+  width: 250px;
+  height: 75px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-red;
+  text-decoration: none;
+  padding: 30px 39px;
+  text-align: center;
+
+  &:hover {
+    background-color: $basic-red-hover;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    height: 50px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    width: 250px;
+    padding: 19px 40px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+  }
+}

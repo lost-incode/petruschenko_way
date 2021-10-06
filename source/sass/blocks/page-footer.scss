@@ -1,0 +1,28 @@
+.page-footer {
+  width: 1159px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  padding-bottom: 74px;
+
+  @media (max-width: $tablet-width-only) {
+    width: calc(100vw - 42px);
+    margin-left: 21px;
+    margin-right: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 54px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: calc(100vw - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+  }
+}

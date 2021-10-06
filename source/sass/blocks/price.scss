@@ -1,0 +1,118 @@
+.price {
+  width: $desktop-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 94px;
+
+  @media (max-width: $tablet-width-only) {
+    width: calc(100vw - 42px);
+    margin-left: 21px;
+    margin-right: 21px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.price__description {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: $tablet-width-only) {
+    order: 0;
+  }
+}
+
+.price__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  max-width: 288px;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width-only) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 150%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.price__tariffs {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 30px;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width-only) {
+    row-gap: 30px;
+  }
+}
+
+.price__subtitle {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  color: $basic-extra-dark-thin;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.price__contacts {
+  padding-left: 46px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $basic-dark;
+  margin-bottom: 13px;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.price__phone-link {
+  font-weight: normal;
+  font-size: 20px;
+  padding-left: 46px;
+  text-decoration: none;
+  color: $basic-black;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-left: 0;
+    color: $basic-red;
+
+    &::before {
+      display: none;
+    }
+  }
+}

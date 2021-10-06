@@ -1,0 +1,25 @@
+.input-phone__asterisk {
+  display: block;
+  position: absolute;
+  color: $basic-red;
+  left: 15px;
+  top: 6px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.input-phone__first-number {
+  display: block;
+  position: absolute;
+  color: $basic-dark;
+  left: 26px;
+  top: 16px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.input-phone__field {
+  padding-left: 51px;
+}
